@@ -1,82 +1,206 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Evolución temporal de UR(σx,σy)</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Evolución temporal de UR(σx,σy)</title>
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
 </head>
-<body>
 
-<h1>Evolución temporal de \( UR(\sigma_x,\sigma_y) \)</h1>
+<body class="index-page">
 
-<p>
-En esta sección se analiza la evolución temporal de la relación de incerteza
-entre los operadores \( \sigma_x \) y \( \sigma_y \) bajo dinámica no hermítica.
-</p>
-
-<h2>Código principal</h2>
-
-<pre>
-<section class="card">
-  <h2>Evolución temporal de $UR(\sigma_x,\sigma_y)$</h2>
-
-  <p>
-  Este material suplementario presenta los gráficos de contorno y mapas de color de 
-  $UR(\sigma_x,\sigma_y)$ en el plano $(\phi,p)$ correspondientes al estado evolucionado temporalmente.
-  </p>
-
-  <div class="gif-container">
-
-    <div class="gif-item">
-      <img src="media/diffptt_contour.gif" alt="Fase de simetría exacta">
-      <p>
-      $UR(\sigma_x,\sigma_y)$ en el plano $(\phi,p)$ correspondiente al estado evolucionado 
-      en la fase de simetría exacta.
-      </p>
-    </div>
-
-    <div class="gif-item">
-      <img src="media/diffnptt_contourn.gif" alt="Fase de simetría rota">
-      <p>
-      $UR(\sigma_x,\sigma_y)$ en el plano $(\phi,p)$ correspondiente al estado evolucionado 
-      en la fase de simetría rota.
-      </p>
-    </div>
-
-    <div class="gif-item">
-      <img src="media/diffpe1t_contour.gif" alt="Punto excepcional eta=1">
-      <p>
-      $UR(\sigma_x,\sigma_y)$ en el plano $(\phi,p)$ correspondiente al estado evolucionado 
-      en el punto excepcional $\eta = 1$.
-      </p>
-    </div>
-
-    <div class="gif-item">
-      <img src="media/diffpe2t_contorno.gif" alt="Punto excepcional eta=-1">
-      <p>
-      $UR(\sigma_x,\sigma_y)$ en el plano $(\phi,p)$ correspondiente al estado evolucionado 
-      en el punto excepcional $\eta = -1$.
-      </p>
-    </div>
-
+<header id="header" class="header d-flex align-items-center position-relative"
+        style="background-color: #d9e5e2ca;">
+  <div class="container-fluid d-flex justify-content-between">
+    <a href="../index.html" class="btn btn-sm btn-outline-dark">
+      ← Volver al inicio
+    </a>
   </div>
+</header>
 
-  <hr>
+<main class="main">
 
-  <p style="text-align:center; font-style: italic;">
-  Este material suplementario está relacionado con el manuscrito en preparación 
-  “Uncertainty inequalities in a non-Hermitian scenario: the problem of the metric”, 
-  por Y. Alvarez, M. Portesi, R. Ramirez y M. Reboiro.
-  </p>
+  <section class="portfolio section light-background" style="background-color: #ecf2f0;">
 
-</section>
-</pre>
+    <!-- Título -->
+    <div class="container section-title text-center" data-aos="fade-up">
+      <h1 class="display-heading mb-3">
+        Evolución temporal de $UR(\sigma_x,\sigma_y)$
+      </h1>
+      <p style="font-size:18px;">
+        Este material suplementario presenta los gráficos de contorno y mapas de color de 
+        $UR(\sigma_x,\sigma_y)$ en el plano $(\phi,p)$ correspondientes al estado evolucionado temporalmente.
+      </p>
+    </div>
 
-<h2>Notebooks</h2>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4 justify-content-center">
 
-<p>
-Descripción o enlaces a notebooks.
-</p>
+        <!-- Fase exacta -->
+        <div class="col-lg-10 col-md-10 col-xl-8">
+          <div class="portfolio-card mx-auto">
+            <div class="image-container">
+              <img class="img-fluid"
+                   src="media/diffptt_contour.gif"
+                   alt="Fase de simetría exacta">
+              <div class="overlay">
+                <div class="overlay-content">
+                  <a href="media/diffptt_contour.gif"
+                     class="glightbox zoom-link"
+                     data-type="image">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="content text-center">
+              <h3>
+                $UR(\sigma_x,\sigma_y)$ en la fase de simetría exacta.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fase rota -->
+        <div class="col-lg-10 col-md-10 col-xl-8">
+          <div class="portfolio-card mx-auto">
+            <div class="image-container">
+              <img class="img-fluid"
+                   src="media/diffnptt_contourn.gif"
+                   alt="Fase de simetría rota">
+              <div class="overlay">
+                <div class="overlay-content">
+                  <a href="media/diffnptt_contourn.gif"
+                     class="glightbox zoom-link"
+                     data-type="image">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="content text-center">
+              <h3>
+                $UR(\sigma_x,\sigma_y)$ en la fase de simetría rota.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Punto excepcional eta=1 -->
+        <div class="col-lg-10 col-md-10 col-xl-8">
+          <div class="portfolio-card mx-auto">
+            <div class="image-container">
+              <img class="img-fluid"
+                   src="media/diffpe1t_contour.gif"
+                   alt="Punto excepcional eta=1">
+              <div class="overlay">
+                <div class="overlay-content">
+                  <a href="media/diffpe1t_contour.gif"
+                     class="glightbox zoom-link"
+                     data-type="image">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="content text-center">
+              <h3>
+                $UR(\sigma_x,\sigma_y)$ en el punto excepcional $\eta = 1$.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Punto excepcional eta=-1 -->
+        <div class="col-lg-10 col-md-10 col-xl-8">
+          <div class="portfolio-card mx-auto">
+            <div class="image-container">
+              <img class="img-fluid"
+                   src="media/diffpe2t_contorno.gif"
+                   alt="Punto excepcional eta=-1">
+              <div class="overlay">
+                <div class="overlay-content">
+                  <a href="media/diffpe2t_contorno.gif"
+                     class="glightbox zoom-link"
+                     data-type="image">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="content text-center">
+              <h3>
+                $UR(\sigma_x,\sigma_y)$ en el punto excepcional $\eta = -1$.
+              </h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Nota final -->
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <p style="font-style: italic;">
+            Este material suplementario está relacionado con el manuscrito en preparación 
+            “Uncertainty inequalities in a non-Hermitian scenario: the problem of the metric”, 
+            por Yanet Alvarez, Mariela Portesi, Romina Ramirez y Marta Reboiro.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container text-center">
+    <p>Material Suplementario – Tesis Doctoral – 2026</p>
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/aos/aos.js"></script>
+<script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="../assets/js/main.js"></script>
+
+<!-- MathJax -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<script>
+  GLightbox({
+    selector: '.glightbox'
+  });
+</script>
 
 </body>
 </html>
