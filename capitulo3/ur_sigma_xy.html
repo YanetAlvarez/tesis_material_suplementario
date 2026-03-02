@@ -3,204 +3,94 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Evolución temporal de UR(σx,σy)</title>
-
-  <!-- Favicons -->
-  <link href="template/MinimalFolio/assets/img/favicon.png" rel="icon">
-  <link href="template/MinimalFolio/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS -->
-  <link href="template/MinimalFolio/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="template/MinimalFolio/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="template/MinimalFolio/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="template/MinimalFolio/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS -->
-  <link href="template/MinimalFolio/assets/css/main.css" rel="stylesheet">
-
+  <!-- Bootstrap CSS desde CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #ecf2f0; font-family: system-ui, -apple-system, sans-serif; }
+    .page-header { background-color: #d9e5e2ca; padding: 12px 0; }
+    .section-wrap { padding: 60px 0; }
+    .main-title { font-size: 1.75rem; margin-bottom: 1rem; }
+    .img-wrap { margin-bottom: 3rem; }
+    .img-wrap img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .caption { font-size: 0.875rem; color: #6c757d; margin-bottom: 0.5rem; }
+    footer { background-color: #0b1f3a; color: #fff; text-align: center; padding: 24px 0; margin-top: 3rem; }
+  </style>
 </head>
 
-<body class="index-page">
+<body>
 
-<header id="header" class="header d-flex align-items-center position-relative"
-        style="background-color: #d9e5e2ca;">
-  <div class="container-fluid d-flex justify-content-between">
-    <a href="../index.html" class="btn btn-sm btn-outline-dark">
-      ← Volver al inicio
-    </a>
+<header class="page-header">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <a href="index.html" class="btn btn-sm btn-outline-dark">← Volver al capítulo 3</a>
   </div>
 </header>
 
-<main class="main">
+<main class="section-wrap">
+  <div class="container" style="max-width: 900px;">
 
-  <section class="portfolio section light-background" style="background-color: #ecf2f0;">
-
-    <!-- Título -->
-    <div class="container section-title text-center" data-aos="fade-up">
-      <h1 class="display-heading mb-3">
-        Evolución temporal de $UR(\sigma_x,\sigma_y)$
-      </h1>
-      <p style="font-size:18px;">
-        Este material suplementario presenta los gráficos de contorno y mapas de color de 
-        $UR(\sigma_x,\sigma_y)$ en el plano $(\phi,p)$ correspondientes al estado evolucionado temporalmente.
+    <div class="text-center mb-5">
+      <h1 class="main-title">Material suplementario</h1>
+      <h2 class="h4 mb-3">Evolución temporal de \(UR(\sigma_x,\sigma_y)\)</h2>
+      <p class="lead">
+        Este material suplementario presenta los gráficos de contorno y mapas de color de
+        \(UR(\sigma_x,\sigma_y)\) en el plano \((\phi,p)\) correspondientes al estado evolucionado temporalmente.
       </p>
     </div>
 
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row gy-4 justify-content-center">
-
-        <!-- Fase exacta -->
-        <div class="col-lg-10 col-md-10 col-xl-8">
-          <div class="portfolio-card mx-auto">
-            <div class="image-container">
-              <img class="img-fluid"
-                   src="media/diffptt_contour.gif"
-                   alt="Fase de simetría exacta">
-              <div class="overlay">
-                <div class="overlay-content">
-                  <a href="media/diffptt_contour.gif"
-                     class="glightbox zoom-link"
-                     data-type="image">
-                    <i class="bi bi-zoom-in"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="content text-center">
-              <h3>
-                $UR(\sigma_x,\sigma_y)$ en la fase de simetría exacta.
-              </h3>
-            </div>
-          </div>
-        </div>
-
-        <!-- Fase rota -->
-        <div class="col-lg-10 col-md-10 col-xl-8">
-          <div class="portfolio-card mx-auto">
-            <div class="image-container">
-              <img class="img-fluid"
-                   src="media/diffnptt_contourn.gif"
-                   alt="Fase de simetría rota">
-              <div class="overlay">
-                <div class="overlay-content">
-                  <a href="media/diffnptt_contourn.gif"
-                     class="glightbox zoom-link"
-                     data-type="image">
-                    <i class="bi bi-zoom-in"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="content text-center">
-              <h3>
-                $UR(\sigma_x,\sigma_y)$ en la fase de simetría rota.
-              </h3>
-            </div>
-          </div>
-        </div>
-
-        <!-- Punto excepcional eta=1 -->
-        <div class="col-lg-10 col-md-10 col-xl-8">
-          <div class="portfolio-card mx-auto">
-            <div class="image-container">
-              <img class="img-fluid"
-                   src="media/diffpe1t_contour.gif"
-                   alt="Punto excepcional eta=1">
-              <div class="overlay">
-                <div class="overlay-content">
-                  <a href="media/diffpe1t_contour.gif"
-                     class="glightbox zoom-link"
-                     data-type="image">
-                    <i class="bi bi-zoom-in"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="content text-center">
-              <h3>
-                $UR(\sigma_x,\sigma_y)$ en el punto excepcional $\eta = 1$.
-              </h3>
-            </div>
-          </div>
-        </div>
-
-        <!-- Punto excepcional eta=-1 -->
-        <div class="col-lg-10 col-md-10 col-xl-8">
-          <div class="portfolio-card mx-auto">
-            <div class="image-container">
-              <img class="img-fluid"
-                   src="media/diffpe2t_contorno.gif"
-                   alt="Punto excepcional eta=-1">
-              <div class="overlay">
-                <div class="overlay-content">
-                  <a href="media/diffpe2t_contorno.gif"
-                     class="glightbox zoom-link"
-                     data-type="image">
-                    <i class="bi bi-zoom-in"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="content text-center">
-              <h3>
-                $UR(\sigma_x,\sigma_y)$ en el punto excepcional $\eta = -1$.
-              </h3>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Nota final -->
-      <div class="row mt-5">
-        <div class="col-12 text-center">
-          <p style="font-style: italic;">
-            Este material suplementario está relacionado con el manuscrito en preparación 
-            “Uncertainty inequalities in a non-Hermitian scenario: the problem of the metric”, 
-            por Yanet Alvarez, Mariela Portesi, Romina Ramirez y Marta Reboiro.
-          </p>
-        </div>
-      </div>
-
+    <div class="img-wrap">
+      <h3 class="h5 mb-2">\(UR(\sigma_x,\sigma_y)\) en el plano \((\phi,p)\) correspondiente al estado evolucionado temporalmente en la fase de simetría exacta.</h3>
+      <p class="caption">Animación de líneas de contorno</p>
+      <img src="media/diffptt_contour.gif" class="img-fluid" alt="Fase de simetría exacta">
     </div>
 
-  </section>
+    <div class="img-wrap">
+      <h3 class="h5 mb-2">\(UR(\sigma_x,\sigma_y)\) en el plano \((\phi,p)\) correspondiente al estado evolucionado temporalmente en la fase de simetría rota.</h3>
+      <p class="caption">Animación de líneas de contorno</p>
+      <img src="media/diffnptt_contourn.gif" class="img-fluid" alt="Fase de simetría rota">
+    </div>
 
+    <div class="img-wrap">
+      <h3 class="h5 mb-2">\(UR(\sigma_x,\sigma_y)\) en el plano \((\phi,p)\) correspondiente al estado evolucionado temporalmente en el punto excepcional \(\eta = 1\).</h3>
+      <p class="caption">Animación de líneas de contorno</p>
+      <img src="media/diffpe1t_contour.gif" class="img-fluid" alt="Punto excepcional η = 1">
+    </div>
+
+    <div class="img-wrap">
+      <h3 class="h5 mb-2">\(UR(\sigma_x,\sigma_y)\) en el plano \((\phi,p)\) correspondiente al estado evolucionado temporalmente en el punto excepcional \(\eta = -1\).</h3>
+      <p class="caption">Animación de líneas de contorno</p>
+      <img src="media/diffpe2t_contorno.gif" class="img-fluid" alt="Punto excepcional η = -1">
+    </div>
+
+    <div class="text-center mt-5 pt-4">
+      <p class="fst-italic">
+        Este material suplementario está relacionado con el manuscrito en preparación
+        “Uncertainty inequalities in a non-Hermitian scenario: the problem of the metric”,
+        por Yanet Alvarez, Mariela Portesi, Romina Ramirez y Marta Reboiro.
+      </p>
+    </div>
+
+  </div>
 </main>
 
-<footer class="footer">
-  <div class="container text-center">
-    <p>Material Suplementario – Tesis Doctoral – 2026</p>
-  </div>
+<footer>
+  <p class="mb-0">Material Suplementario – Tesis Doctoral – 2026</p>
 </footer>
 
-<!-- JS -->
-<script src="template/MinimalFolio/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="template/MinimalFolio/assets/vendor/aos/aos.js"></script>
-<script src="template/MinimalFolio/assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="template/MinimalFolio/assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- MathJax -->
+<!-- MathJax: LaTeX se renderiza con \( \) y $ $ -->
 <script>
 window.MathJax = {
   tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
   }
 };
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-<script>
-  GLightbox({
-    selector: '.glightbox'
-  });
-</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
 
 </body>
 </html>

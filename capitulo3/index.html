@@ -11,27 +11,40 @@
 
 <header>
     <div class="header-content">
-        <h1>Capítulo 1</h1>
+        <h1>Capítulo 3</h1>
         <p>Desigualdades a la Robertson sin hermiticidad</p>
     </div>
 </header>
 
 <main>
 
-
 <section class="card">
     <h2>Material suplementario</h2>
-    <ul>
-        <a href="ur_sigma_xy.html" class="chapter-btn">
-    Evolución temporal de $UR(\sigma_x,\sigma_y)$</a>
-        <li><a href="codigo_principal.py">Código principal</a></li>
-        <li><a href="notebooks/">Notebooks</a></li>
-    </ul>
+    <div class="chapter-grid">
+        <a href="./ur_sigma_xy.html" class="chapter-btn">
+            <strong>Evolución temporal</strong>
+            <span>\(UR(\sigma_x,\sigma_y)\)</span>
+        </a>
+        <a href="codigo_principal.py" class="chapter-btn">
+            <strong>Código principal</strong>
+            <span>codigo_principal.py</span>
+        </a>
+        <a href="notebooks/" class="chapter-btn">
+            <strong>Notebooks</strong>
+            <span>Notebooks del capítulo</span>
+        </a>
+    </div>
 </section>
 
-<p><a href="../index.html">← Volver al inicio</a></p>
+<p><a href="../index.html" class="chapter-btn" style="display:inline-block; margin-top:1em;">← Volver al inicio</a></p>
 
 </main>
 
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 </html>
